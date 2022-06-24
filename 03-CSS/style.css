@@ -7,6 +7,7 @@ body {
   font-family: sans-serif;
   color: #1098ad;
   margin: 0px;
+  position: relative;
 }
 .main-header {
   background-color: greenyellow;
@@ -155,4 +156,36 @@ footer p {
 .pic {
   width: 100%;
   height: auto;
+}
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+/* adjacent sibling pseudo */
+/* h2::first-letter {
+  color: pink;
+} */
+/* h3 + p::first-line {
+  color: red;
+} */
+h2 {
+  position: relative;
+  /* background-color: aqua; */
+}
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: 16px;
+  font-weight: bold;
+  /* display: inline-block; */
+  padding: 5px 10px;
+  color: rgb(68, 68, 68);
+  position: absolute;
+  top: -15px;
+  right: -25px;
 }
